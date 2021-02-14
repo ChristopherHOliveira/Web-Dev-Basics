@@ -1,3 +1,3 @@
-# Treino com HTML5
+# Treinos de tecnologias voltadas para a web
 
-Aqui você poderá encontrar exemplos de utilização da linguagem HTML5.
+Aqui você poderá encontrar exemplos de tecnologias voltadas para a web.
