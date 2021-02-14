@@ -1,3 +1,3 @@
-# Learning-JavaScript
+# Treino com HTML5
 
-Monster JavaScript !
+Aqui você poderá encontrar exemplos de utilização da linguagem HTML5.
