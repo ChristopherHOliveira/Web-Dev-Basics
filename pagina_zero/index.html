@@ -6,9 +6,13 @@
 		<meta Qualquer coisa poderia ser escrita aqui />
 		<meta name="keywords" content="HTML5, CSS, JavaScript" />
 		<meta name="description" content="" />
+
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link href="imagens/favicon.ico" rel="icon" type="image/x-icon" />
+		
+
 	</head>
-	<body>
+	<body id = "corpo-pagina">
 	
 		<header>
 			<br><h2>Chris</h2>
@@ -29,7 +33,7 @@
 						<a href="https://www.linkedin.com/in/christopherholiveira/" target="blank">TESTE LINK</a>
 				
 				</div>
-					<img src="imagens/bit_monkey.png" width="250rem" />
+					<img src="imagens/bit_monkey.png" width="500 px" />
 				</p>
 			</article>
 		</section>
@@ -101,38 +105,10 @@
 		
 		<section>
 			<article>
-				<header><h3>Entre em Contato</h3></header>
-				<form method="POST"
-					  enctype="application/x-www-form-urlencoded"
-					  action="/salvarForm">
-					<div>
-						<label for="campo-nome">Nome completo: </label>
-						<input id="campo-nome" name="nome" type="text" placeholder="ex. João Estevam da Bressa" required />
-					</div>  
-					<div>
-						<br/><label for="campo-email">E-mail: </label>
-						<input id="campo-email" name="email" type="email" placeholder="ex. joao@provedor.com" required />
-					</div>
-					<div>
-						<br/><label for="campo-assunto">Assunto: </label>
-						<select name="assunto" id="campo-assunto" required>
-							<option>Bug</option>
-							<option>Sugestão</option>
-							<option>Reclamação</option>
-							<option>Outro</option>							
-						</select>
-					</div>
-					<div>
-						<br/><label for="campo-mensgaem">Mensagem: </label>
-						<textarea rows="3" cols="30" name="mensagem" id="campo-mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
-					</div>
-					<div>
-						<br/><button type="submit">Enviar contato</button>
-						<button type="reset">Limpar formulário</button>
-						<button type="button">Botão</button>
-					</div>
-					<br/>
-				</form>
+				<header>
+					<a href="contato.html"><h3>Entre em Contato</h3></a>
+				</header>
+
 			</article>
 		</section>
 		
