@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<section>
+	<article>
+		<header><h3>Você sabia?</h3></header>
+		<!--treinando a utilização do Jinja-->
+		<p>Olá {{ nome_usuario }}, seja bem-vind@ !</p>
+		<p>
+			<!--mostrando uma lista com Jinja-->
+			No momento as seguintes motos constam na lista: <br>
+			<ul>
+				{% for item in motos %}
+					{% if item == 'XTZ 250 Lander' %}
+						<li style ='color: blue'>{{ item }}</li>
+					{% else %}
+						<li>{{ item }}</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</p>
+	</article>
+	<article>
+		<div>
+			<p id="testando"></p> <br>
+		</div>
+	</article>
+</section>
+{% endblock %}		

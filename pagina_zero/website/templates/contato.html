@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+<script src="../static/scripts/verifica.js" defer></script>
+{% endblock %}
+
+{% block conteudo %}
+<section>
+	<article>
+		<header><h3>Entre em Contato</h3></header>
+		<form method="POST"
+
+			action="">
+			<div>
+				<label for="txt-nome">Nome completo: </label>
+				<input id="txt-nome" name="nome" type="text" placeholder="ex. João Estevam da Bressa" />
+			</div>  
+			<div>
+				<br/><label for="txt-email">E-mail: </label>
+				<input id="txt-email" name="email" type="email" placeholder="ex. joao@provedor.com" required />
+			</div>
+			<div>
+				<p>Selecione coisas que você gosta:</p>
+
+				<label for="cb-js">JavaScript</label>
+				<input type="checkbox" id="cb-js" name="cb_gfs" value="javascript" /><br>
+
+				<label for="cb-pz">Pizza</label>
+				<input type="checkbox" id="cb-pz" name="cb_gf" value="pizza" /><br>
+
+				<label for="cb-agr">Agrião</label>
+				<input type="checkbox" id="cb-agr" name="cb_gf" value="agriao" /><br>
+
+			</div>
+			<div>
+				<p>Selecione o seu sexo: </p>
+
+				<label for="rd-masc">Masculino</label>
+				<input type="radio" id="rd-masc" name="rd_sex" value="masculino" /><br>
+
+				<label for="rd-fem">Feminino</label>
+				<input type="radio" id="rd-fem" name="rd_sex" value="feminino" /><br>
+
+				<label for="rd-nse">Não sei</label>
+				<input type="radio" id="rd-nse" name="rd_sex" value="naosei" />
+			</div>
+
+			<div>
+				<br><label for="sel-assunto">Assunto: </label>
+				<select name="assunto" id="sel-assunto" required>
+					<option value='0'>Selecione..</option>
+					<option value='1'>Sugestão</option>
+					<option value='2'>Reclamação</option>
+					<option value='3'>Bug</option>
+					<option value='3'>Outro</option>							
+				</select>
+			</div>
+
+			<div>
+				<br><label for="txt-mensagem">Mensagem: </label>
+				<textarea rows="3" cols="30" name="mensagem" id="txt-mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
+			</div>
+
+			<div>
+				<br/><button type="submit" id="bt-submit">Enviar contato</button>
+				<button type="reset" id="bt-reset">Limpar formulário</button>
+				<button type="button">Botão</button>
+			</div>
+			<br>
+		</form>
+		<div>
+			<p id="erros"></p> <br>
+		</div>
+	</article>
+</section>
+{% endblock %}

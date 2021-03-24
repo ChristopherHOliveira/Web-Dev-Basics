@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title id="idName">Christopher</title>
+		<meta charset="UTF-8"/>
+		<meta Qualquer coisa poderia ser escrita aqui />
+		<meta name="keywords" content="HTML5, CSS, JavaScript" />
+		<meta name="description" content="" />
+		<link href="../static/imagens/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="../static/css/style.css" type="text/css" />
+
+		
+		{% block scripts %}
+		<!--neste bloco Jinja estarão os respectivos scripts de cada página-->
+		{% endblock %}
+
+	</head>
+	<body id = "corpo-base">
+	
+		<header>
+			<br><h2>Site X</h2>
+			<nav>
+                <ul>
+                    <a href="/">Página inicial </a>
+					<a href="/admin/entrar">Entrar</a> 
+                    <a href="/motos">Motos </a>
+                    <a href="/contato">Entre em Contato </a>
+                </ul>
+            </nav>
+            
+		</header>
+		<main>
+            
+            {% block conteudo %}
+			<!--Este bloco Jinja será substituído pelo conteúdo principal das outras páginas-->
+            {% endblock %}
+		</main>
+
+		<section>
+			<footer>
+				<article>
+					<header><h3>Links</h3></header>
+					<div itemscope itemtype="http://schema.org/Person">
+						<ul id="linksrodape" class="media-list">
+							<li>
+								<span itemprop="url"><a class="media-link linkedin" href="https://www.linkedin.com/in/christopherholiveira/" target="blank">Linkedin</a></span>
+							</li>
+							<li>
+								<span itemprop="url"><a class="media-link github" href="https://github.com/ChristopherHOliveira/" target="blank">GitHub</a></span>
+							</li>
+							<li>
+								<span itemprop="url"><a class="media-link twitter" href="https://twitter.com/chris_h_o" target="blank">Twitter</a></span>
+							</li>
+						</ul>
+					</div>
+					<br/>
+				</article>
+			</footer>
+		</section>
+		<div id="idCopy">
+			<p>
+				<br>&copy 2021 - Todos os direitos reservados
+			</p>
+		</div>
+	</body>
+</html>
