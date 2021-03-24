@@ -1,0 +1,37 @@
+h2{
+	letter-spacing: 2em;
+	text-align: center;
+}
+body{
+	font-family: Tahoma;
+}
+section{
+	background-color: lightgray;
+	padding:1em;
+	margin:15px;
+	border-radius:25px
+}
+article{
+	border: 2px solid black;
+	margin: 15px;
+	border-radius:15px;
+	padding: 1em;
+	padding-left:2.5em;
+}
+h3{
+	color: darkblue;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
+input{
+	width: 20em;
+}
+
+#idCopy{
+	text-align: center;
+}
