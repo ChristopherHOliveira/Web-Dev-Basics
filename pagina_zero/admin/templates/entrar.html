@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 
-{% block conteudo %}
+<!--chamando o script de verificação AJAX-->
+{% block scripts %}
+<script src="../static/scripts/login.js" defer></script>
+{% endblock %}
 
+
+{% block conteudo %}
 <section>
     <article>
         <form action='' method='POST'>
@@ -17,12 +22,11 @@
                 <button type='submit' id='bt-login'>Entrar</button>
             </div>
         </form>
+        <p id='msg-erros'></p>
         <div>
             <p>{{ p_msg }}</p>
         </div>
 
     </article>
 </section>
-
-
 {% endblock %}
