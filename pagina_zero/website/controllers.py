@@ -12,22 +12,6 @@ def f_ola(parametro):
 def f_index():
     return render_template('index.html')
 
-# login
-@website_bp.route('/entrar', methods=['GET', 'POST'])
-def entra():
-    msg = ''
-    # forma de pegar os dados no servidor, com python
-    '''
-    if request.method == 'POST':
-        form = request.form
-        # 'usuario' é o 'name' do campo usuario no html
-        usuario = form.get('usuario')
-        # 'senha' é o 'name' do campo senha
-        senha = form.get('senha')
-        msg = 'Dados processados pelo Flask! Usuário: ' + usuario + ' / Senha: ' + senha
-    '''
-    return render_template('entrar.html', mensagem = msg)
-
 # aqui, ao entrar em http://127.0.0.1:5000/contato
 @website_bp.route('/contato')
 def f_contato():
